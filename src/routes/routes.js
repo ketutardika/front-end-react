@@ -54,6 +54,24 @@ import UserEdit from '../pages/admin/users/Edit';
 //import view web Home
 import Home from '../pages/web/home/Index';
 
+//import view web category Show
+import WebCategoryShow from '../pages/web/categories/Show';
+
+//import view web place Index
+import WebPlaceIndex from '../pages/web/places/Index';
+
+//import view web place Show
+import WebPlaceShow from '../pages/web/places/Show';
+
+//import view web place Direction
+import WebPlaceDirection from '../pages/web/places/Direction';
+
+//import view web maps
+import MapsIndex from '../pages/web/maps/Index';
+
+//import view web search
+import WebSearch from '../pages/web/search/Index';
+
 function Routes() {
     return (
         <Switch>
@@ -126,6 +144,36 @@ function Routes() {
             {/* route "/" */} 
             <Route exact path="/">
                 <Home />
+            </Route>
+
+            {/* private route "/category/:slug" */}
+            <Route exact path="/category/:slug">
+                <WebCategoryShow />
+            </Route>
+
+            {/* private route "/places" */}
+            <Route exact path="/places">
+                <WebPlaceIndex />
+            </Route>
+
+            {/* private route "/places/:slug" */}
+            <Route exact path="/places/:slug">
+                <WebPlaceShow />
+            </Route>
+
+            {/* private route "/places/:slug/direction" */}
+            <Route exact path="/places/:slug/direction">
+                <WebPlaceDirection />
+            </Route>
+
+            {/* private route "/maps" */}
+            <Route exact path="/maps">
+                <MapsIndex />
+            </Route>
+
+            {/* private route "/maps" */}
+            <Route exact path="/search">
+                <WebSearch />
             </Route>
 
         </Switch>
