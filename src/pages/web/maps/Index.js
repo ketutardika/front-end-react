@@ -50,7 +50,7 @@ function WebMapsIndex() {
         //init Map
         const map = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/maulayyacyber/ckszo2l5q6xkj17qnk8rgh2jh',
+            style: 'mapbox://styles/mapbox/streets-v12',
             center: [116.5519982204172, -2.8989093904502283],
             zoom: 4
         });

@@ -25,8 +25,8 @@ function WebPlaceDirection() {
     const mapContainer = useRef(null);
 
     //state for user location coordinate
-    const [longitude, setLongitude] = useState(110.7241664);
-    const [latitude, setLatitude] = useState(-6.9515962);
+    const [longitude, setLongitude] = useState(115.216667);
+    const [latitude, setLatitude] = useState(-8.650000);
 
     //slug params
     const { slug } = useParams();
@@ -40,7 +40,7 @@ function WebPlaceDirection() {
         //init Map
         const map = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/maulayyacyber/ckszo2l5q6xkj17qnk8rgh2jh',
+            style: 'mapbox://styles/mapbox/streets-v12',
             center: [query.get("longitude"), query.get("latitude")],
             zoom: 15
         });

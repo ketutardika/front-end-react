@@ -179,9 +179,9 @@ function PlaceCreate() {
         //init map
         const map = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/light-v11',
+            style: 'mapbox://styles/mapbox/streets-v12',
             center: [longitude, latitude],
-            zoom: 12
+            zoom: 8
         });
 
         //init geocoder

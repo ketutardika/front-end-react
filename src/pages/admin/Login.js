@@ -16,7 +16,7 @@ import { useHistory, Redirect } from "react-router-dom";
 function Login() {
 
     //title page
-    document.title = "Login - Administrator Travel GIS";
+    document.title = "Login - Administrator Travel ReactJS";
 
     //state user
     const [email, setEmail] = useState("");
